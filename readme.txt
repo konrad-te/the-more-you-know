@@ -1,0 +1,2 @@
+This program will provide most common interview question for a specific junior developer role like Python or SQL.
+This is an alpha version with a very basic functionality that I am going to expand later.
