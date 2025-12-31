@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Interview Cards</title>
+  </head>
+  <body style="font-family: system-ui; max-width: 720px; margin: 40px auto;">
+    <h1>Interview Cards</h1>
+    <p>Pick a topic:</p>
+    <ul>
+      {% for t in topics %}
+        <li><a href="/topic/{{t}}">{{t}}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

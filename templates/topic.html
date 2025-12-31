@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{topic}} - Interview Cards</title>
+  </head>
+  <body style="font-family: system-ui; max-width: 720px; margin: 40px auto;">
+    <a href="/">← back</a>
+    <h1>{{topic}}</h1>
+
+    <div style="border: 1px solid #ddd; border-radius: 16px; padding: 20px;">
+      <h2 style="margin-top: 0;">Question</h2>
+      <p>{{qa.question}}</p>
+
+      <button id="toggleBtn"
+              style="margin-top: 10px; padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer;">
+        Show answer
+      </button>
+
+      <div id="answerBox" style="display: none; margin-top: 16px;">
+        <h2>Answer</h2>
+        <p>{{qa.answer}}</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 20px;">
+      <a href="/topic/{{topic}}/next">Next question →</a>
+    </p>
+
+    <script>
+      const btn = document.getElementById("toggleBtn");
+      const box = document.getElementById("answerBox");
+
+      btn.addEventListener("click", () => {
+        const isHidden = box.style.display === "none";
+        box.style.display = isHidden ? "block" : "none";
+        btn.textContent = isHidden ? "Hide answer" : "Show answer";
+      });
+    </script>
+  </body>
+</html>

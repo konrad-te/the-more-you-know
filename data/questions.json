@@ -1,0 +1,186 @@
+{
+  "python": [
+    {
+      "question": "What is the difference between a list and a tuple in Python?",
+      "answer": "Lists are mutable, meaning you can change their contents after creation. Tuples are immutable and cannot be modified. Tuples can also be used as dictionary keys if they contain only hashable values."
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "answer": "A dictionary is a collection of key-value pairs. Keys must be unique and hashable, while values can be of any type."
+    },
+    {
+      "question": "What does the GIL do?",
+      "answer": "The Global Interpreter Lock (GIL) ensures that only one thread executes Python bytecode at a time in CPython. This simplifies memory management but limits CPU-bound multithreading."
+    },
+    {
+      "question": "What is the difference between == and is?",
+      "answer": "== compares values for equality, while is checks if two variables refer to the same object in memory."
+    },
+    {
+      "question": "What are Python decorators?",
+      "answer": "Decorators are functions that modify the behavior of other functions without changing their code. They are often used for logging, authentication, or timing."
+    },
+    {
+      "question": "What is a virtual environment?",
+      "answer": "A virtual environment isolates project dependencies so different projects can use different package versions without conflicts."
+    },
+    {
+      "question": "What is None in Python?",
+      "answer": "None represents the absence of a value. It is commonly used as a default value or to indicate that something has no result."
+    },
+    {
+      "question": "What is the difference between a shallow copy and a deep copy?",
+      "answer": "A shallow copy copies references to nested objects, while a deep copy creates completely independent copies of all nested objects."
+    },
+    {
+      "question": "What are list comprehensions?",
+      "answer": "List comprehensions provide a concise way to create lists using a single line of code with an optional condition."
+    },
+    {
+      "question": "What is the difference between append() and extend()?",
+      "answer": "append() adds one element to a list, while extend() adds elements from another iterable to the list."
+    },
+    {
+      "question": "What are *args and **kwargs?",
+      "answer": "*args allows passing a variable number of positional arguments, while **kwargs allows passing a variable number of keyword arguments."
+    },
+    {
+      "question": "What is exception handling in Python?",
+      "answer": "Exception handling uses try, except, else, and finally blocks to handle runtime errors gracefully without crashing the program."
+    },
+    {
+      "question": "What is the difference between a module and a package?",
+      "answer": "A module is a single Python file, while a package is a directory containing multiple modules and an __init__.py file."
+    },
+    {
+      "question": "What does __init__ do?",
+      "answer": "__init__ is a constructor method that runs automatically when a new object is created from a class."
+    },
+    {
+      "question": "What is inheritance?",
+      "answer": "Inheritance allows a class to reuse and extend the behavior of another class."
+    },
+    {
+      "question": "What is a lambda function?",
+      "answer": "A lambda function is a small anonymous function defined using the lambda keyword, usually for short operations."
+    },
+    {
+      "question": "What is the difference between return and print?",
+      "answer": "print outputs a value to the console, while return sends a value back to the caller of the function."
+    },
+    {
+      "question": "What is a generator?",
+      "answer": "A generator produces values one at a time using yield instead of returning all values at once, which saves memory."
+    },
+    {
+      "question": "What is the purpose of requirements.txt?",
+      "answer": "requirements.txt lists project dependencies so they can be installed consistently using pip."
+    },
+    {
+      "question": "What does mutable mean?",
+      "answer": "Mutable objects can be changed after creation, such as lists and dictionaries."
+    },
+    {
+      "question": "What does immutable mean?",
+      "answer": "Immutable objects cannot be changed after creation, such as tuples, strings, and integers."
+    },
+    {
+      "question": "What is PEP 8?",
+      "answer": "PEP 8 is the official Python style guide that defines best practices for readable and consistent code."
+    },
+    {
+      "question": "What is the difference between Python 2 and Python 3?",
+      "answer": "Python 3 uses Unicode by default for strings, has better integer handling, and fixes many design issues present in Python 2."
+    },
+    {
+      "question": "What is a context manager?",
+      "answer": "A context manager manages resources using the with statement, ensuring setup and cleanup actions are handled automatically."
+    },
+    {
+      "question": "What is the difference between break and continue?",
+      "answer": "break exits a loop entirely, while continue skips the current iteration and moves to the next one."
+    },
+    {
+      "question": "What is type hinting?",
+      "answer": "Type hinting allows specifying expected data types for variables and functions to improve readability and tooling support."
+    },
+    {
+      "question": "What is an iterable?",
+      "answer": "An iterable is an object that can be looped over, such as lists, tuples, strings, and dictionaries."
+    },
+    {
+      "question": "What is a class?",
+      "answer": "A class is a blueprint for creating objects that bundle data and behavior together."
+    },
+    {
+      "question": "What is an object?",
+      "answer": "An object is an instance of a class that contains actual data and methods."
+    },
+    {
+      "question": "What does pass do?",
+      "answer": "pass is a placeholder statement that does nothing, often used where a statement is syntactically required."
+    }
+  ],
+  "sql": [
+    {
+      "question": "What is SQL?",
+      "answer": "SQL is a language used to communicate with relational databases to create, read, update, and delete data."
+    },
+    {
+      "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+      "answer": "INNER JOIN returns only matching rows. LEFT JOIN returns all rows from the left table and matching rows from the right table."
+    },
+    {
+      "question": "What is a primary key?",
+      "answer": "A primary key uniquely identifies each row in a table and cannot contain NULL values."
+    },
+    {
+      "question": "What is a foreign key?",
+      "answer": "A foreign key links one table to another by referencing a primary key."
+    },
+    {
+      "question": "What is normalization?",
+      "answer": "Normalization is the process of organizing data to reduce duplication and improve data integrity."
+    },
+    {
+      "question": "What is the difference between DELETE and TRUNCATE?",
+      "answer": "DELETE removes selected rows and can be rolled back. TRUNCATE removes all rows and cannot be rolled back."
+    },
+    {
+      "question": "What is an index?",
+      "answer": "An index improves query performance by allowing faster data lookup."
+    },
+    {
+      "question": "What is GROUP BY used for?",
+      "answer": "GROUP BY groups rows that have the same values so aggregate functions like COUNT or SUM can be applied."
+    },
+    {
+      "question": "What is the WHERE clause?",
+      "answer": "WHERE filters rows based on a condition."
+    },
+    {
+      "question": "What is the HAVING clause?",
+      "answer": "HAVING filters groups after aggregation, while WHERE filters rows before aggregation."
+    },
+    {
+      "question": "What is NULL?",
+      "answer": "NULL represents missing or unknown data."
+    },
+    {
+      "question": "What is the difference between COUNT(*) and COUNT(column)?",
+      "answer": "COUNT(*) counts all rows, while COUNT(column) counts only non-NULL values in that column."
+    },
+    {
+      "question": "What is a transaction?",
+      "answer": "A transaction is a group of SQL operations executed as a single unit, ensuring data consistency."
+    },
+    {
+      "question": "What does ACID stand for?",
+      "answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability."
+    },
+    {
+      "question": "What is a view?",
+      "answer": "A view is a virtual table based on a SQL query that simplifies complex queries."
+    }
+  ]
+}
