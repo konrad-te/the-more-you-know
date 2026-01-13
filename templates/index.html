@@ -2,15 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Interview Cards</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
   </head>
-  <body style="font-family: system-ui; max-width: 720px; margin: 40px auto;">
-    <h1>Interview Cards</h1>
-    <p>Pick a topic:</p>
-    <ul>
-      {% for t in topics %}
-        <li><a href="/topic/{{t}}">{{t}}</a></li>
-      {% endfor %}
-    </ul>
+
+  <body>
+    <div class="container">
+
+      <div class="nav">
+        <a class="brand" href="/">
+          <div class="brand-badge"></div>
+          <div>
+            <div class="brand-title">Interview Cards</div>
+            <span class="brand-sub">Python & SQL interview practice</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="hero">
+        <h1>Pick a topic</h1>
+        <p>
+          Click a card to start answering random interview questions.
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <!-- PYTHON -->
+        <div class="card">
+          <a href="/topic/PYTHON">
+            <div class="card-top">
+              <div class="logo">
+                <img src="{{ url_for('static', path='python.svg') }}" alt="Python">
+              </div>
+              <div>
+                <h2>Python</h2>
+                <div class="meta">Core language & fundamentals</div>
+              </div>
+            </div>
+
+            <div class="cta">Start →</div>
+          </a>
+        </div>
+
+        <!-- SQL -->
+        <div class="card">
+          <a href="/topic/SQL">
+            <div class="card-top">
+              <div class="logo">
+                <img src="{{ url_for('static', path='sql.svg') }}" alt="SQL">
+              </div>
+              <div>
+                <h2>SQL</h2>
+                <div class="meta">Queries, joins, databases</div>
+              </div>
+            </div>
+
+            <div class="cta">Start →</div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        Built for fast daily practice ✨
+      </div>
+
+    </div>
   </body>
 </html>
+`

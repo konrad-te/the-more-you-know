@@ -1,8 +1,11 @@
-interview-cards/
+your_project/
   app.py
-  data/
-    questions.json
   templates/
     index.html
     topic.html
-  requirements.txt
+  static/
+    styles.css
+    python.svg   (or .png)
+    sql.svg      (or .png)
+  data/
+    questions.json

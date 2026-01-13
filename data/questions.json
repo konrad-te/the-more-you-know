@@ -1,5 +1,5 @@
 {
-  "python": [
+  "PYTHON": [
     {
       "question": "What is the difference between a list and a tuple in Python?",
       "answer": "Lists are mutable, meaning you can change their contents after creation. Tuples are immutable and cannot be modified. Tuples can also be used as dictionary keys if they contain only hashable values."
@@ -121,7 +121,7 @@
       "answer": "pass is a placeholder statement that does nothing, often used where a statement is syntactically required."
     }
   ],
-  "sql": [
+  "SQL": [
     {
       "question": "What is SQL?",
       "answer": "SQL is a language used to communicate with relational databases to create, read, update, and delete data."

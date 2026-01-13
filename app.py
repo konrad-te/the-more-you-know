@@ -4,8 +4,11 @@ from fastapi.templating import Jinja2Templates
 import json
 import random
 from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 DATA_PATH = Path("data/questions.json")
