@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="sqlg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="128" cy="48" rx="96" ry="32" fill="url(#sqlg)"/>
+  <path fill="url(#sqlg)" d="
+    M32 48
+    v112
+    c0 17.7 43 32 96 32
+    s96-14.3 96-32
+    V48
+    c0 17.7-43 32-96 32
+    S32 65.7 32 48z"/>
+
+  <ellipse cx="128" cy="160" rx="96" ry="32" fill="rgba(0,0,0,0.08)"/>
+</svg>
